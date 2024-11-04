@@ -1,0 +1,81 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tjenjang by FBNN</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background-color: #F1EFEB;
+            opacity: 0.8;
+            background-image: linear-gradient(#E0DEDA 1px, transparent 1px),
+                linear-gradient(to right, #E0DEDA 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+
+        .inter-google {
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body class="w-auto h-auto bg-[#F1EFEB] inter-google">
+    <header class="w-auto h-20">
+        <div class="container h-20 mx-auto">
+            <div class="flex flex-row justify-between">
+                <div class="flex w-3/4 items-center h-24">
+                    <img src="images/text-1730687240493.png" alt="logos" class="max-h-10" />
+                    <div x-data="{ open: false }" class="px-6 ml-12">
+                        <div>
+                            <button @mouseover="open = true" @mouseleave="open = false" type="button"
+                                class="h-20 text-xl hover:underline hover:underline-offset-8">
+                                Products
+                            </button>
+                        </div>
+                        <div x-show="open" @mouseover="open = true" @mouseleave="open = false"
+                            class="absolute z-10 bg-stone-100" role="menu" aria-orientation="vertical"
+                            aria-labelledby="options-menu">
+                            <div class="text-xl" role="none">
+                                <a href="/#tableau" class="block px-2 py-2 text-gray-700 hover:bg-stone-200"
+                                    role="menuitem">Tableau Template</a>
+                                <a href="/#powerbi" class="block px-2 py-2 text-gray-700 hover:bg-stone-200"
+                                    role="menuitem">Power BI Template</a>
+                                <a href="/" class="block px-2 py-2 text-gray-700 hover:bg-stone-200"
+                                    role="menuitem">Course
+                                    <span
+                                        class="rounded-full bg-rose-200 px-2.5  text-sm text-rose-700">
+                                        soon
+                                    </span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-4 text-xl underline underline-offset-8">
+                        <a href="/doc.html">Documents</a>
+                    </div>
+                    <div class="px-4 text-xl hover:underline hover:underline-offset-8">
+                        <a href="/pricing.html">Pricing</a>
+                    </div>
+                    <div class="px-4 text-xl hover:underline hover:underline-offset-8">
+                        <a href="/#about">About</a>
+                    </div>
+                </div>
+                <div class="flex w-1/4 justify-end items-center">
+                    <a class="h-10 inline-block rounded bg-stone-800 px-12 py-2 text-sm font-medium text-white hover:bg-stone-900"
+                        href="#contact">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="flex justify-center items-center h-1/2 text-4xl">
+Under Maintenance
+    </main>
+</body>
+</html>
